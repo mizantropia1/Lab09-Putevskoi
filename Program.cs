@@ -35,3 +35,58 @@ Console.WriteLine("Шаг 2. Кратные пяти, от 5 до 50.");
 for (int room = 5; room <= 50; room += 5) {
     Console.WriteLine($"Кабинет {room}");
 }
+
+
+
+Console.WriteLine();
+Console.WriteLine("Шаг 3. Исходный код.");
+int totalWeeks = 3;
+
+for (int week = 1; week <= totalWeeks; week++) {
+    for (int day = 1; day <= 5; day++) {
+        Console.WriteLine($"Неделя {week}, день {day}");
+    }
+}
+
+
+
+Console.WriteLine();
+Console.WriteLine("Шаг 3. Дополнительная строка-разделитель.");
+int totalWeeks2 = 3;
+
+for (int week2 = 1; week2 <= totalWeeks2; week2++) {
+    for (int day2 = 1; day2 <= 5; day2++) {
+        Console.WriteLine($"Неделя {week2}, день {day2}");
+    }
+
+    Console.WriteLine("^_^");
+}
+
+
+
+Console.WriteLine();
+Console.WriteLine("Шаг 4. Исходный код.");
+for (int ticket = 1; ticket <= 30; ticket++) {
+    if (ticket == 4 || ticket == 12 || ticket == 19) {
+        continue;
+    }
+
+    Console.WriteLine($"Первый доступный билет: {ticket}");
+    break;
+}
+
+
+
+Console.WriteLine();
+Console.WriteLine("Шаг 4. Счётчик пропущенных билетов.");
+int skipped2 = 0;
+
+for (int ticket2 = 1; ticket2 <= 30; ticket2++) {
+    if (ticket2 == 1 || ticket2 == 2 || ticket2 == 3) {
+        skipped2++;
+        continue;
+    }
+
+    Console.WriteLine($"Первый доступный билет: {ticket2}, пропущено билетов: {skipped2}");
+    break;
+}
